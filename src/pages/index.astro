@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Profile from '../components/Profile.astro';
+import { resume } from '../../libs/resume';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Profile resume={resume}  />
+	</main>
+</Layout>
+
+<style>
+	main {
+		color: white;
+	}
+</style>
